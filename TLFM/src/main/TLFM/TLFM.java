@@ -138,7 +138,7 @@ public class TLFM extends common_TLFM{
 			System.out.println(i+1 + "次迭代," + "RMSE是" + curRmse);
 			//输出
 			try {
-				FileOutputStream out = new FileOutputStream(".\\dataT\\out.txt",true);
+				FileOutputStream out = new FileOutputStream(".\\data\\out.txt",true);
 				OutputStreamWriter osw = new OutputStreamWriter(out, "utf-8");
 				BufferedWriter bwr = new BufferedWriter(osw);
 				bwr.write(curRmse + "\r\n");
@@ -217,8 +217,8 @@ public class TLFM extends common_TLFM{
 	public static void main(String[] args) throws NumberFormatException, 
 			IOException {		
 		common_TLFM.initialize(
-				".\\dataT\\TML1M_train.dat",
-				".\\dataT\\TML1M_test.dat", "::");
+				".\\data\\TML1M_train.dat",
+				".\\data\\TML1M_test.dat", "::");
 		common_TLFM.iterTimes = 1000;
 		common_TLFM.G = 0.002;
 		common_TLFM.L = 0.005;

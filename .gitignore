@@ -1,1 +1,6 @@
-dataT/
+# timeSVDPlusPlus ignore
+data/
+
+# idea ignore
+.idea/
+.gitignore
